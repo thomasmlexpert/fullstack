@@ -1,0 +1,30 @@
+{
+  "name": "fullstack",
+  "version": "1.0.0",
+  "description": "learn",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thomasmlexpert/fullstack.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "thomas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thomasmlexpert/fullstack/issues"
+  },
+  "homepage": "https://github.com/thomasmlexpert/fullstack#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "pg": "^7.11.0"
+  }
+}
