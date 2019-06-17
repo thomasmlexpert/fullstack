@@ -17,13 +17,13 @@ app.use("/api/weather",require("./api/weather"))
 
 if (ENV === "production"){
   app.use(express.static(path.join(__dirname, "../client/build")));
-  app.use(req, res=>{
+  app.get("*", res=>{
     res.sendFile(path.join(__dirname,"../client/build/index.html"))
   })
 }
 
 app.listen(PORT, () => {
-console.log('console listening on port ',PORT);
+ console.log('console listening on port ',PORT);
 });
 
 db.query("SELECT NOW()",(err,res)=>{
