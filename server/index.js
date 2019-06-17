@@ -17,7 +17,7 @@ app.use("/api/weather",require("./api/weather"))
 
 if (ENV === "production"){
   app.use(express.static(path.join(__dirname, "../client/build")));
-  app.get("*", res=>{
+  app.get("/", (req,res)=>{
     res.sendFile(path.join(__dirname,"../client/build/index.html"))
   })
 }
