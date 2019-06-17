@@ -28,10 +28,7 @@ class App extends Component{
  handleInputChange = (e) =>{
    this.setState({ newCityName: e.target.value})
  };
- try=()=>{
-  console.log("123456789")
 
- }
  handleAddCity=()=>{
    fetch("/api/cities",{
      method: "post",
@@ -56,18 +53,17 @@ handleChangeCity = (e) =>{
   this.getWeather(e.target.value);
 }
 
- getCityList =() => {
-   fetch("/api/cities")
-   .then(res => console.log("i dont know12344"))
-   .then(res =>res.json())
-   .then(res => console.log("i dont know"))
-   .then(res=>{
-     var cityList = res.map(r => r.city_name);
-     this.setState({cityList});
-   });
- };
+// getCityList =() => {
+//    fetch("/api/cities")
+//    .then(res =>res.json())
+//    .then(res=>{
+//      var cityList = res.map(r => r.city_name);
+//      this.setState({cityList});
+//    });
+//  };
  componentDidMount(){
-   this.getCityList();
+  //  this.getCityList();
+   console.log("1223444")
  }
  render(){ 
   return (
